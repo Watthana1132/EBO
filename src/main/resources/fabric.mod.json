@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "ebonyblade",
+  "version": "${version}",
+  "name": "Ebony Blade",
+  "description": "A cursed sword mod with scaling damage, kill stacking, and dark combat effects.",
+  "authors": [
+    "Watthana"
+  ],
+  "contact": {},
+  "license": "CC0-1.0",
+  "icon": "assets/ebonyblade/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.watthana.ebonyblade.EbonyBlade"
+    ],
+    "client": [
+      "com.watthana.ebonyblade.EbonyBladeClient"
+    ]
+  },
+  "mixins": [
+    "ebonyblade.mixins.json",
+    {
+      "config": "ebonyblade.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
