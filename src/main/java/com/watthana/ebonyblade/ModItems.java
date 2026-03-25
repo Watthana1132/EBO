@@ -17,7 +17,7 @@ public class ModItems {
         "ebony_blade",
         EbonyBladeItem::new,
         new Item.Properties()
-                .sword(ToolMaterial.DIAMOND, 2.0F, 1.0F)
+                .sword(ToolMaterial.NETHERITE, 2.0F, 1.0F)
                 .component(ModComponents.KILL_COUNT, 0)
 );
 
